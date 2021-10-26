@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,31 @@
     <link rel="stylesheet" href="style.css">
     <title>Bem-vindo!</title>
 </head>
+
 <body id="loginbody">
     <div class="login-box">
         <h1>Login</h1>
         <div class="textbox">
             <i class="far fa-user"></i>
-            <input type="text" placeholder="Username" name="" value="">
+            <form action="login.php" method="post" enctype="multipart/form-data">
+                <input type="text" placeholder="Username" name="NOME" value="">
         </div>
 
         <div class="textbox">
             <i class="fas fa-key"></i>
-            <input type="password" placeholder="Password" name="" value="">
+            <input type="password" placeholder="Password" name="SENHA" value="">
         </div>
 
-        <input class="btn" type="button" name="" value="Sign in">
-        
-        <p><a href="home.html"><input class="retornar" type="button" value="Retornar"></a></p>
+        <input class="btn" type="submit" name="" value="Sign in">
 
-        
+        <p>
+            <a href="home.html"><input class="retornar" type="button" value="Retornar"></a>
+        </p>
+        </form>
+
+
+
     </div>
 </body>
+
 </html>
